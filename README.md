@@ -1,5 +1,6 @@
 # Prefect ECS Fargate Deployment using Terraform
-<img width="948" alt="image" src="https://github.com/user-attachments/assets/4f2b21e4-23cd-4e48-8e26-47fa7798c262" />
+<img width="847" alt="image" src="https://github.com/user-attachments/assets/55c181d4-92e1-4542-afb8-8a0f415b6ace" />
+
 
 
 ## Project Purpose
@@ -40,7 +41,7 @@ Terraform was chosen over AWS CloudFormation due to:
 - Note:These values are securely stored in AWS Secrets Manager.
 - ![image](https://github.com/user-attachments/assets/0c3be2f8-87a3-475b-be4b-203d71b03617) 
 
-## terraform Cycle
+## Terraform Cycle
 - **terraform init**        #initialises terraform
 - <img width="626" alt="image" src="https://github.com/user-attachments/assets/c19ea8be-6178-4d56-8c54-adde4db7072b" />
 - **terraform plan**        #plans the deployment of terraform
@@ -69,16 +70,16 @@ Terraform was chosen over AWS CloudFormation due to:
     - ->**Cluster prefect-cluster exists**
  -  ![image](https://github.com/user-attachments/assets/99770193-bcaa-44c8-9c4a-837dca37e5fd)
 
-- **2.In Prefect Cloud:
-     - ->Go to Work Pools**
+- **2.In Prefect Cloud:**
+     - **->Go to Work Pools**
    -  **->Verify a pool named ecs-work-pool is present and active**
   - ![image](https://github.com/user-attachments/assets/ece4481b-0884-48bc-8d32-a2a7ac47d6af)
   - **NOTE- In prefect cloud, to deploy work pool with ecs type it required premium version .**
-  - to deploy worker pool on ecs we need ecs type on prefect cloud but it has to be upgraded account.
+  - **to deploy worker pool on ecs we need ecs type on prefect cloud but it has to be upgraded account.**
   -  ![image](https://github.com/user-attachments/assets/32031311-b3e2-4dac-9b0a-f755dabe0ffa)
 - **so what I have done is,With given default work pool I just verified with the sample flow file(flow.py) by downloading the prefect environment locally**
  - <img width="948" alt="image" src="https://github.com/user-attachments/assets/0632bcdd-8956-4e79-a12d-467551f4f593" /> 
-- ![image](https://github.com/user-attachments/assets/fad94309-5f55-4cb8-b4c5-bb18aa583cfb) #sample flow python file
+- ![image](https://github.com/user-attachments/assets/fad94309-5f55-4cb8-b4c5-bb18aa583cfb) **#sample flow python file**
 
 - **Trigger a sample flow to confirm worker is responsive**
 - <img width="726" alt="image" src="https://github.com/user-attachments/assets/036f5d1d-7a1d-448a-8660-8bcb544be3a1" />
