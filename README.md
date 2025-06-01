@@ -1,4 +1,6 @@
 # Prefect ECS Fargate Deployment using Terraform
+<img width="948" alt="image" src="https://github.com/user-attachments/assets/4f2b21e4-23cd-4e48-8e26-47fa7798c262" />
+
 
 ## Project Purpose
 This project deploys a **Prefect worker** on **Amazon ECS (Fargate)** using **Terraform** as Infrastructure as Code (IaC). The deployment includes:
