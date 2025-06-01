@@ -11,22 +11,22 @@ This project deploys a **Prefect worker** on **Amazon ECS (Fargate)** using **Te
 
 ## Why Terraform?
 Terraform was chosen over AWS CloudFormation due to:
--first and foremost I am very vell known to **Terraform and it gives modular structure**.
+- first and foremost I am very vell known to **Terraform and it gives modular structure**.
 - **Cloud-agnostic flexibility**, allowing future reuse across platforms.
 - Strong **community support**, and better handling of **state management** and **versioning**.
 - Rich ecosystem of **providers** and plugins.
 
 ## Repository Structure
-prefect-ecs-iac/
-├── modules/
-│ ├── ecs/
-│ ├── ecs_service/
-│ ├── iam/
-│ ├── secrets/
-│ └── vpc/
-├── terraform.tfvars
-├── variables.tf
-├── README.md
+- prefect-ecs-iac/
+- ├── modules/
+- │ ├── ecs/
+- │ ├── ecs_service/
+- │ ├── iam/
+- │ ├── secrets/
+- │ └── vpc/
+- ├── terraform.tfvars
+- ├── variables.tf
+- ├── README.md
 
 ## Configure terraform.tfvars
 #Create and populate your terraform.tfvars file with necessary values like:
@@ -37,9 +37,9 @@ prefect_workspace_id = "<your-prefect-workspace-id>"
 Note:These values are securely stored in AWS Secrets Manager.
 
 ## terraform Cycle
-terraform init   #initialises terraform
-terraform plan    #plans the deployment of terraform
-terraform apply    #terraform will be applied 
+- terraform init   #initialises terraform
+- terraform plan    #plans the deployment of terraform
+- terraform apply    #terraform will be applied 
 
 ## Outputs
 After successful apply, Terraform will output:
@@ -58,7 +58,7 @@ vpc_id                    = vpc-***********(vpc_id)
      ->Go to Work Pools
      ->Verify a pool named ecs-work-pool is present and active
 (Optional) Trigger a sample flow to confirm worker is responsive
-**NOTE**- In prefect cloud, to deploy work pool with ecs type it required premium version so what I have done is, I just verified withe sample flow file with default work pool. 
+- **NOTE**- In prefect cloud, to deploy work pool with ecs type it required premium version so what I have done is, I just verified withe sample flow file with default work pool. 
 
 ## Cleanup Instructions
 terraform destroy.
