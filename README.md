@@ -26,6 +26,7 @@ Terraform was chosen over AWS CloudFormation due to:
 - ├── terraform.tfvars
 - ├── variables.tf
 - ├── README.md
+- ![Screenshot (728)](https://github.com/user-attachments/assets/0f5cfaef-6e22-45a0-9473-1c5b4794f23a) 
 
 ## Configure terraform.tfvars
 - Create and populate your terraform.tfvars file with necessary values like:
