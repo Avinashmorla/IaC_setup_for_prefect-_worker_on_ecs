@@ -47,7 +47,7 @@ Terraform was chosen over AWS CloudFormation due to:
 
 
 - **terraform apply**       #terraform will be applied
-  <img width="590" alt="image" src="https://github.com/user-attachments/assets/b139cd9e-0332-466b-b453-4221c2518014" />
+  - <img width="590" alt="image" src="https://github.com/user-attachments/assets/b139cd9e-0332-466b-b453-4221c2518014" />
 
 
 ## Outputs
@@ -84,6 +84,6 @@ Terraform was chosen over AWS CloudFormation due to:
 - <img width="952" alt="image" src="https://github.com/user-attachments/assets/ec49093b-2a8d-46c2-91c8-f783bb6e177b" />
 
 ## Cleanup Instructions
-terraform destroy.  #destroys all the infrastructure 
+**terraform destroy.**  #destroys all the infrastructure 
 ![image](https://github.com/user-attachments/assets/27ecd638-628f-49d3-ae32-8fcd53caeaf6)
 
