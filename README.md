@@ -1,4 +1,3 @@
-# IaC_setup_for_prefect-_worker_on_ecs
 # Prefect ECS Fargate Deployment using Terraform
 
 ## Project Purpose
@@ -37,9 +36,9 @@ Terraform was chosen over AWS CloudFormation due to:
 - Note:These values are securely stored in AWS Secrets Manager.
 
 ## terraform Cycle
-- terraform init   #initialises terraform
-- terraform plan    #plans the deployment of terraform
-- terraform apply    #terraform will be applied 
+- terraform init        #initialises terraform
+- terraform plan        #plans the deployment of terraform
+- terraform apply       #terraform will be applied 
 
 ## Outputs
 - After successful apply, Terraform will output:
@@ -61,4 +60,4 @@ Terraform was chosen over AWS CloudFormation due to:
 - **NOTE**- In prefect cloud, to deploy work pool with ecs type it required premium version so what I have done is, I just verified withe sample flow file with default work pool. 
 
 ## Cleanup Instructions
-terraform destroy.
+terraform destroy.  #destroys all the infrastructure 
