@@ -26,7 +26,8 @@ Terraform was chosen over AWS CloudFormation due to:
 - ├── terraform.tfvars
 - ├── variables.tf
 - ├── README.md
-- ![Screenshot (728)](https://github.com/user-attachments/assets/0f5cfaef-6e22-45a0-9473-1c5b4794f23a) 
+![image](https://github.com/user-attachments/assets/dbdba723-6828-426d-87f9-0e3a5b95ae3f)
+
 
 ## Configure terraform.tfvars
 - Create and populate your terraform.tfvars file with necessary values like:
@@ -35,11 +36,16 @@ Terraform was chosen over AWS CloudFormation due to:
 - prefect_account_id = "<your-prefect-account-id>"
 - prefect_workspace_id = "<your-prefect-workspace-id>"
 - Note:These values are securely stored in AWS Secrets Manager.
+- ![image](https://github.com/user-attachments/assets/0c3be2f8-87a3-475b-be4b-203d71b03617) 
 
 ## terraform Cycle
 - terraform init        #initialises terraform
+- <img width="626" alt="image" src="https://github.com/user-attachments/assets/c19ea8be-6178-4d56-8c54-adde4db7072b" />
 - terraform plan        #plans the deployment of terraform
-- terraform apply       #terraform will be applied 
+- ![image](https://github.com/user-attachments/assets/99353283-74f8-4af3-94f9-81f0fa3b4c7e)
+- terraform apply       #terraform will be applied
+- ![image](https://github.com/user-attachments/assets/74b69357-d1ad-4a79-9365-0e10f09ded64)
+
 
 ## Outputs
 - After successful apply, Terraform will output:
