@@ -28,7 +28,7 @@ prefect-ecs-iac/
 ├── variables.tf
 ├── README.md
 
-**##Configure terraform.tfvars**
+## Configure terraform.tfvars
 #Create and populate your terraform.tfvars file with necessary values like:
 aws_region         = "us-east-1"
 prefect_api_key    = "<your-prefect-api-key>"
@@ -36,12 +36,12 @@ prefect_account_id = "<your-prefect-account-id>"
 prefect_workspace_id = "<your-prefect-workspace-id>"
 Note:These values are securely stored in AWS Secrets Manager.
 
-**#terraform Cycle**
+## terraform Cycle
 terraform init   #initialises terraform
 terraform plan    #plans the deployment of terraform
 terraform apply    #terraform will be applied 
 
-**Outputs**
+## Outputs
 After successful apply, Terraform will output:
 ecs_cluster_arn           = "arn:aws:ecs:us-east-1:638298051191:cluster/prefect-cluster"
 ecs_service_name          = prefect-worker-service
@@ -50,7 +50,7 @@ public_subnets            = [subnet-0f796d8fa9a55cb9b, subnet-053d9b4dd439393b5,
 task_execution_role_arn   = arn:aws:iam::638298051191:role/prefect-task-execution-role
 vpc_id                    = vpc-***********(vpc_id)
 
-**Verification**
+## Verification
 1.Go to the AWS ECS Console and verify:
     ->Cluster prefect-cluster exists
     ->Service dev-worker is running in private subnets
@@ -60,5 +60,5 @@ vpc_id                    = vpc-***********(vpc_id)
 (Optional) Trigger a sample flow to confirm worker is responsive
 **NOTE**- In prefect cloud, to deploy work pool with ecs type it required premium version so what I have done is, I just verified withe sample flow file with default work pool. 
 
-**Cleanup Instructions**
+## Cleanup Instructions
 terraform destroy.
