@@ -57,7 +57,7 @@ Terraform was chosen over AWS CloudFormation due to:
      ->Go to Work Pools
      ->Verify a pool named ecs-work-pool is present and active
 (Optional) Trigger a sample flow to confirm worker is responsive
-- **NOTE**- In prefect cloud, to deploy work pool with ecs type it required premium version so what I have done is, I just verified withe sample flow file with default work pool. 
+- **NOTE- In prefect cloud, to deploy work pool with ecs type it required premium version so what I have done is, I just verified withe sample flow file with default work pool.** 
 
 ## Cleanup Instructions
 terraform destroy.  #destroys all the infrastructure 
