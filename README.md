@@ -3,7 +3,7 @@
 ## Overview  
 ![Architecture](https://github.com/user-attachments/assets/55c181d4-92e1-4542-afb8-8a0f415b6ace)
 
----
+
 
 ## 🚀 Project Overview
 This project deploys a **Prefect worker** on **Amazon ECS (Fargate)** using **Terraform** as Infrastructure as Code (IaC). The deployment includes:
@@ -13,7 +13,6 @@ This project deploys a **Prefect worker** on **Amazon ECS (Fargate)** using **Te
 - Secrets stored securely in AWS Secrets Manager
 - A Prefect worker connected to a Prefect Cloud work pool
 
----
 
 ## 🔧 Why Terraform?
 Terraform was chosen over AWS CloudFormation because:
@@ -22,7 +21,7 @@ Terraform was chosen over AWS CloudFormation because:
 - Excellent **state management**, **versioning**, and **community support**.
 - Rich ecosystem of **providers** and plugins.
 
----
+
 
 ## 📁 Repository Structure
 ```
@@ -40,7 +39,7 @@ prefect-ecs-iac/
 
 ![Repo Structure](https://github.com/user-attachments/assets/dbdba723-6828-426d-87f9-0e3a5b95ae3f)
 
----
+
 
 ## ⚙️ Prerequisites
 - Terraform `>= 1.5.0`
@@ -48,7 +47,7 @@ prefect-ecs-iac/
 - AWS Provider `>= 5.0`
 - Prefect Cloud account and API key
 
----
+
 
 ## ⚡ Quick Start
 
@@ -61,7 +60,7 @@ terraform apply
 
 > Ensure your `terraform.tfvars` is configured correctly before running `apply`.
 
----
+
 
 ## 🔐 terraform.tfvars Configuration
 
@@ -76,7 +75,7 @@ These values are securely stored in **AWS Secrets Manager**.
 
 ![Secrets](https://github.com/user-attachments/assets/0c3be2f8-87a3-475b-be4b-203d71b03617)
 
----
+
 
 ## 🛠️ Terraform Commands
 
@@ -99,7 +98,7 @@ terraform apply
 ```
 ![apply](https://github.com/user-attachments/assets/b139cd9e-0332-466b-b453-4221c2518014)
 
----
+
 
 ## 📤 Terraform Output
 
@@ -114,7 +113,7 @@ vpc_id                  = vpc-*********** (vpc_id)
 
 ![Output](https://github.com/user-attachments/assets/23e45c05-3f50-444e-a0be-d752d61f4201)
 
----
+
 
 ## ✅ Verification
 
@@ -133,7 +132,7 @@ vpc_id                  = vpc-*********** (vpc_id)
 
 ![Upgrade Note](https://github.com/user-attachments/assets/32031311-b3e2-4dac-9b0a-f755dabe0ffa)
 
----
+
 
 ## 🧪 Flow Execution Demo
 
@@ -147,7 +146,7 @@ I verified worker functionality using a local Prefect flow (`flow.py`):
 ![Output 1](https://github.com/user-attachments/assets/8f37c57c-b176-4809-80be-18b7d8ca57b1)
 ![Output 2](https://github.com/user-attachments/assets/ec49093b-2a8d-46c2-91c8-f783bb6e177b)
 
----
+
 
 ## 🧹 Cleanup Instructions
 
@@ -157,16 +156,3 @@ terraform destroy
 ```
 ![Destroy](https://github.com/user-attachments/assets/27ecd638-628f-49d3-ae32-8fcd53caeaf6)
 
----
-
-## 🙋‍♂️ Author
-
-**Morla Avinash**  
-🚀 DevOps Enthusiast | AWS Certified Solutions Architect Associate  
-GitHub: [github.com/avinashmorla](https://github.com/avinashmorla)
-
----
-
-## 📄 License
-
-This project is intended for demonstration and educational purposes only.
