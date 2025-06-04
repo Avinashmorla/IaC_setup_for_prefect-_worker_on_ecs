@@ -58,6 +58,7 @@ cd prefect-ecs-iac
 terraform init
 terraform apply
 ```
+
 > Ensure your `terraform.tfvars` is configured correctly before running `apply`.
 
 ---
@@ -79,32 +80,30 @@ These values are securely stored in **AWS Secrets Manager**.
 
 ## 🛠️ Terraform Commands
 
-- **Initialize Terraform**
-  ```bash
-  terraform init
-  ```
-  <img width="626" alt="init" src="https://github.com/user-attachments/assets/c19ea8be-6178-4d56-8c54-adde4db7072b" />
+**Initialize**
+```bash
+terraform init
+```
+![init](https://github.com/user-attachments/assets/c19ea8be-6178-4d56-8c54-adde4db7072b)
 
-- **Plan Deployment**
-  ```bash
-  terraform plan
-  ```
-  <img width="431" alt="plan1" src="https://github.com/user-attachments/assets/4466d562-29b2-4b7b-8a32-44d7c55c9ae4" />
-  <img width="365" alt="plan2" src="https://github.com/user-attachments/assets/55a37c5c-e91b-414e-bab1-bca859bb7d44" />
+**Plan**
+```bash
+terraform plan
+```
+![plan1](https://github.com/user-attachments/assets/4466d562-29b2-4b7b-8a32-44d7c55c9ae4)
+![plan2](https://github.com/user-attachments/assets/55a37c5c-e91b-414e-bab1-bca859bb7d44)
 
-- **Apply Infrastructure**
-  ```bash
-  terraform apply
-  ```
-  <img width="590" alt="apply" src="https://github.com/user-attachments/assets/b139cd9e-0332-466b-b453-4221c2518014" />
+**Apply**
+```bash
+terraform apply
+```
+![apply](https://github.com/user-attachments/assets/b139cd9e-0332-466b-b453-4221c2518014)
 
 ---
 
 ## 📤 Terraform Output
-<details>
-<summary>Click to expand</summary>
 
-```txt
+```
 ecs_cluster_arn         = "arn:aws:ecs:us-east-1:638298051191:cluster/prefect-cluster"
 ecs_service_name        = prefect-worker-service
 private_subnets         = [subnet-091afaa9ee6cbb8e2, subnet-0be8b19e80d93f402, subnet-08cbc3fd73ba19da6]
@@ -112,7 +111,6 @@ public_subnets          = [subnet-0f796d8fa9a55cb9b, subnet-053d9b4dd439393b5, s
 task_execution_role_arn = arn:aws:iam::638298051191:role/prefect-task-execution-role
 vpc_id                  = vpc-*********** (vpc_id)
 ```
-</details>
 
 ![Output](https://github.com/user-attachments/assets/23e45c05-3f50-444e-a0be-d752d61f4201)
 
@@ -126,7 +124,6 @@ vpc_id                  = vpc-*********** (vpc_id)
   ![Cluster](https://github.com/user-attachments/assets/99770193-bcaa-44c8-9c4a-837dca37e5fd)
 
 ### 🔍 In Prefect Cloud
-
 - Navigate to **Work Pools**
 - Verify a pool named `ecs-work-pool` is present and active  
   ![Work Pool](https://github.com/user-attachments/assets/ece4481b-0884-48bc-8d32-a2a7ac47d6af)
@@ -145,10 +142,10 @@ I verified worker functionality using a local Prefect flow (`flow.py`):
 ![Local Flow](https://github.com/user-attachments/assets/0632bcdd-8956-4e79-a12d-467551f4f593)
 ![Code](https://github.com/user-attachments/assets/fad94309-5f55-4cb8-b4c5-bb18aa583cfb)
 
-- **Triggering the flow**
-  ![Flow Trigger](https://github.com/user-attachments/assets/036f5d1d-7a1d-448a-8660-8bcb544be3a1)
-  ![Output 1](https://github.com/user-attachments/assets/8f37c57c-b176-4809-80be-18b7d8ca57b1)
-  ![Output 2](https://github.com/user-attachments/assets/ec49093b-2a8d-46c2-91c8-f783bb6e177b)
+**Triggering the flow:**
+![Flow Trigger](https://github.com/user-attachments/assets/036f5d1d-7a1d-448a-8660-8bcb544be3a1)
+![Output 1](https://github.com/user-attachments/assets/8f37c57c-b176-4809-80be-18b7d8ca57b1)
+![Output 2](https://github.com/user-attachments/assets/ec49093b-2a8d-46c2-91c8-f783bb6e177b)
 
 ---
 
